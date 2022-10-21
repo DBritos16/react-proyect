@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+#hero button {
+    font-size: 1.2em; 
+    padding: 18px 25px;
+    border-radius: 30px;
+    border: 0px solid rgb(0, 0, 0);
+    background-color: #4726e1;
+    color: white;
+}
+
+#hero button:hover {
+    background-color: #3212c2;
+}
+
+#hero h1 {
+    font-size: 3em;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(../img/hero.jpg);
+}
+
+#nosotros {
+    color: white;
+    background-color: black;
+}
+
+#nosotros .container {
+    text-align: center;
+    padding: 100px 12px;
+}
+
+#nosotros button {
+    font-size: 1.2em; 
+    padding: 18px 25px;
+    border-radius: 30px;
+    border: 0px solid rgb(0, 0, 0);
+    background-color: #4726e1;
+    color: white;
+}
+
+#nosotros button:hover {
+    background-color: #3212c2;
+}
+
+#objetivos .container {
+    text-align: center;
+    padding: 150px 0px;
+}
+
+#objetivos {
+    background-color: rgb(233, 233, 233);
+}
+
+.textocarta p {
+    color: gray;
+}
+
+.img1 {
+    height: 22vh;
+    
+}
+
+#search {
+    height: 40vh;
+    background-color: blue;
+}
+
+#registro {
+    width: 50vh;
+}
+
+@media (min-width: 720px) {
+
+    #nosotros .container {
+        display: flex;
+    }
+
+    #nosotros .texto {
+        width: 50%;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-right: 30px;
+        padding-left: 10px;
+    }
+
+    #nosotros .img-contenedor {
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ),url(../img/informarr.png);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 700px;
+    }
+
+    #objetivos .img1 {
+        height: 13vh;
+        
+    }
+    #objetivos .objetivosb {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+    }
+
+    .img1 {
+        padding-right: 43px
+
+    }
+
+    #objetivos .textocarta {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+
+}
